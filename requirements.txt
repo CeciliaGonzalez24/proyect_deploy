@@ -5,3 +5,4 @@ python-jose[cryptography]==3.5.0
 passlib[bcrypt]==1.7.4
 sqlalchemy==2.0.43
 ollama==0.5.4
+python-dotenv==1.0.0
