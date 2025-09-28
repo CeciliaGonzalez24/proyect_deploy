@@ -1,0 +1,7 @@
+[phases.setup]
+cmds = [
+    "cd Backend && pip install --upgrade pip && pip install fastapi==0.116.2 uvicorn==0.24.0 bcrypt==4.3.0 python-jose==3.5.0 passlib==1.7.4 sqlalchemy==2.0.43 ollama==0.5.4"
+]
+
+[start]
+cmd = "cd Backend && python -m uvicorn main:app --host 0.0.0.0 --port $PORT"
