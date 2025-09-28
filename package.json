@@ -1,8 +1,12 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "engines": {
+    "node": "18",
+    "python": "3.13"
+  },
   "scripts": {
-    "build": "echo 'No frontend build needed'",
+    "build": "cd Backend && pip install -r requirements.txt",
     "start": "cd Backend && python -m uvicorn main:app --host 0.0.0.0 --port $PORT"
   }
 }
