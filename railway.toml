@@ -7,3 +7,6 @@ restartPolicyType = "ON_FAILURE"
 
 [env]
 PORT = "8000"
+
+[start]
+cmd = "cd Backend && poetry run python -m uvicorn main:app --host 0.0.0.0 --port $PORT"
